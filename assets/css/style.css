@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito:wght@200;300;400;600;700&display=swap");
 
-.header{
-    display: block;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.header-style .header-top {
+.nav-link{
+    color: #c2c2cc;
+    justify-content: flex-end;
+}
+
+.navbar{
     background-color: #292930;
-    padding: 6px 0;
 }
-
