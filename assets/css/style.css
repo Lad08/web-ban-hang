@@ -1,16 +1,494 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito:wght@200;300;400;600;700&display=swap");
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.page {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    max-width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+  }
+.page__header {
+    top: 0;
+    background-color: #FFFFFF;
 }
+  .header__nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    background-color: #FFFFFF;
+  }
 
-.nav-link{
-    color: #c2c2cc;
-    justify-content: flex-end;
-}
 
-.navbar{
-    background-color: #292930;
+  .header__nav-items{
+    background-color: #F9F3F0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+  }
+  .header__nav-items a {
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20px;
+    padding: 1rem 1.5rem;
+    color: #2a220c;
+  } 
+  .header_action-search {
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+ 
+  .form__input-text {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: #2a220c solid 1px;
+  }
+  .page__main h4{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 14px;
+    color: #FFA0BB;
+  }
+  .page__main i{
+    margin-right: 10px;
+  }
+  .page__main h1{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 46.8px;
+    color: #2a220c;
+  }
+.wrapper-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "aa bb"
+  "cc cc";
+  background-color: #ffffff;
+  color: #050505;
 }
+.footer-text{
+  color: #080808;
+  font-size: 10px;
+}
+.footer-main ul li a{
+  text-decoration: none;
+  color: #5a5757;
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 10px;
+  line-height: 10px;
+} 
+.footer-main ul li:hover a{
+  color: red
+  }
+  .page__footer{
+    grid-area: cc;
+    text-align: center;
+    margin-top: 100px;
+    font-size: small;
+    color: #99A6A8;
+  }
+  .header_img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-areas: "aa bb"
+  "aa cc"
+    "aa dd";
+    background-color: #FFFFFF;
+    border-radius: 1%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 150px;
+  }
+  .header_nav_img{
+    grid-area: aa;
+    width: 800px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1%;
+  }
+  .header_nav_img_2{
+    grid-area: bb;
+    width: 535px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+  }
+  .header_nav_img_3{
+    grid-area: cc;
+    width: 535px;
+    height: auto;
+    margin-left: 10px;
+    
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+  }
+  .khuyenmai{
+    grid-area: dd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-areas: "aa aa"
+  "bb cc"
+  "dd ee";
+  }
+  .khuyenmai h6{
+    grid-area: aa;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: auto;
+    color: #99A6A8;
+  }
+  .khuyenmai_img_1{
+    grid-area: bb;
+    width: 60px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .title1{
+    grid-area: cc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+  }
+  .title2{
+    grid-area: ee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+  }
+  .khuyenmai_img_2{
+    grid-area: dd;
+    width: 60px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .page__main_title{
+    background-color: #FFFFFF;
+    margin-top: 50px;
+  }
+  .page__main_title h4{
+    padding-top: 50px;
+  }
+  .danhmuc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "aa bb cc dd ee ff";
+    
+  }
+  .thuong_hieu1{
+    grid-area: aa;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+  }
+  .thuong_hieu1:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  .thuong_hieu_img_1{
+    width: 80%;
+    padding-left: 20px;
+  
+  }
+  .thuong_hieu2{
+    grid-area: bb;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+  }
+  .thuong_hieu2:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  .thuong_hieu_img_2{
+    width: 80%;
+    padding-left: 20px;
+  }
+  .thuong_hieu3{
+    grid-area: cc;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+  }
+  .thuong_hieu3:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  .thuong_hieu_img_3{
+    width: 80%;
+    padding-left: 20px;
+  
+  }
+  .thuong_hieu4{
+    grid-area: dd;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+  }
+  .thuong_hieu4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  .thuong_hieu_img_4{
+    width: 80%;
+    padding-left: 20px;
+  
+  }
+  .thuong_hieu5:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  .thuong_hieu5{
+    grid-area: ee;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+  }
+  .thuong_hieu_img_5{
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 10px;
+  
+  }
+  .thuong_hieu6:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  .thuong_hieu6{
+    grid-area: ff;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+  }
+  .thuong_hieu_img_6{
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 5px;
+  
+  }
+  .page__main_body{
+    background-color: #FFFFFF;
+  }
+  .sanpham{
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "aa bb cc dd "
+    "ee ff gg hh";
+  }
+  .sanpham1{
+    grid-area: aa;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sanpham2{
+    grid-area: bb;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sanpham3{
+    grid-area: cc;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sanpham4{
+    grid-area: dd;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sanpham5{
+    grid-area: ee;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sanpham6{
+    grid-area: ff;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sanpham7{
+    grid-area: gg;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sanpham8{
+    grid-area: hh;
+    position: relative;
+    border-style:solid;
+    border-width: thin;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+.sanpham1:hover .image {
+  opacity: 0.3;
+}
+  .sanpham1:hover .middle {
+    opacity: 1;
+  }
+  .sanpham2:hover .image {
+    opacity: 0.3;
+  }
+    .sanpham2:hover .middle {
+      opacity: 1;
+    }
+    .sanpham3:hover .image {
+      opacity: 0.3;
+    }
+      .sanpham3:hover .middle {
+        opacity: 1;
+      }
+      .sanpham4:hover .image {
+        opacity: 0.3;
+      }
+        .sanpham4:hover .middle {
+          opacity: 1;
+        }
+        .sanpham5:hover .image {
+          opacity: 0.3;
+        }
+          .sanpham5:hover .middle {
+            opacity: 1;
+          }
+          .sanpham6:hover .image {
+            opacity: 0.3;
+          }
+            .sanpham6:hover .middle {
+              opacity: 1;
+            }
+            .sanpham7:hover .image {
+              opacity: 0.3;
+            }
+              .sanpham7:hover .middle {
+                opacity: 1;
+              }
+              .sanpham8:hover .image {
+                opacity: 0.3;
+              }
+                .sanpham8:hover .middle {
+                  opacity: 1;
+                }
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .detail{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+  .danhgia i p{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #5a5757;
+    padding-left: 1px;
+  }
+  .danhgia{
+    margin-left: 60px;
+  }
+  .checked{
+    color: orange;
+  }
+  .gia{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+  }
+  .btxemsanpham {
+    background-color: #F6F7FB;
+    border-style: solid;
+    text-align: center;
+  margin-left: 600px;
+  margin-right: 600px;
+  margin-top: 100px;
+  padding: 10px;
+ border-radius: 10px;
+ border-width: thin;
+  }
+  .btxemsanpham a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #5a5757;
+  }
+  
