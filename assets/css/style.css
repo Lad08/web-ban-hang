@@ -492,3 +492,13 @@
     color: #5a5757;
   }
   
+.title{
+  font-size: 18px;
+  font-weight: 500;
+  color: #27272e;
+  border-bottom: 2px solid;
+}
+
+.sidebar-content{
+  font-size: 16px;
+}
