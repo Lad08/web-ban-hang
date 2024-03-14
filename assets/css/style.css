@@ -64,6 +64,7 @@
   .page__main h1{
     text-decoration: none;
     font-family: "DM Sans", sans-serif;
+    padding-bottom: 30px;
     font-size: 36px;
     font-weight: 700;
     font-style: normal;
@@ -385,6 +386,7 @@
     height: auto;
     transition: 0.5s ease;
     backface-visibility: hidden;
+    border-bottom: 2px solid #27272e;
   }
   .middle {
     transition: 0.5s ease;
@@ -528,17 +530,10 @@ select{
   border: 2px solid #cbd3d9;
 }
 
-.img-product {
-  border: 0;
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
-  border-bottom: 2px solid #27272e;
-}
-
 .thumbnail{
   position: relative;
   display: block;
+
 }
 
 .thumbnail:hover .image {
@@ -587,7 +582,9 @@ a{
   text-decoration: none;
 }
 
-
+.col-xl-3, .col-lg-4, .col-sm-6{
+  padding-bottom: 30px;
+}
 
 
 
